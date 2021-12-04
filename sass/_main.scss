@@ -1,0 +1,85 @@
+main {
+    // max-width: 1440px;
+    background-image: url(../images/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: transparent;
+
+    .contenedor {
+
+        .linea {
+
+            .columna {
+                display: flex;
+                justify-content: center;
+                padding-top: 10%;
+
+                div {
+                    justify-content: center;
+
+                    h1 {
+                        font-family: Helvetica, sans-serif;
+                        font-style: bold;
+                        font-weight: 800;
+                        font-size: 64px;
+                        line-height: 86px;
+
+                        background: #ccc;
+                        background: linear-gradient(-259deg, #f81f01, #ee076e);
+
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                    }
+
+                    p {
+                        max-width: 790px;
+                        ;
+                        font-family: Helvetica;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 22px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 0.6);
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    div {
+        .btn-contacto {
+            text-decoration: none;
+            font-family: Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 7%;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.06);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            box-sizing: border-box;
+            border-radius: 6px;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #DC0D28;
+                color: rgba(255, 255, 255, 0.6);
+                border: 2px solid #DC0D28;
+                box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+                // -webkit-transform: translateY(-5 px);
+                transform: translateY(-10%);
+
+
+
+                transition: .3s;
+            }
+        }
+    }
+}

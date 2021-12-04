@@ -1,0 +1,33 @@
+/* Nuestro Portfolio */
+.portfolio-header {
+    padding: 60px 0 60px 220px;
+    // padding-top: 71px;
+    // padding-left: 220px;
+
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55.2px;
+}
+
+.portfolio-header::before {
+    content: "-";
+    color: #eb004e;
+    padding-right: 15px;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 121px;
+}
+
+.portfolio-item {
+    width: 320px;
+    height: 467px;
+    padding: 0 20px;
+    background-color: aquamarine;
+
+}
+
+/* Fin Portfolio */
