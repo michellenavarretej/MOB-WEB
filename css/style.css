@@ -21,7 +21,7 @@ header .logo-mob a img {
   height: 38px;
 }
 header nav {
-  padding-right: 4%;
+  padding-right: 5%;
   padding-top: 0%;
 }
 header nav ul {
@@ -32,6 +32,7 @@ header nav ul {
 }
 header nav ul li {
   padding: 14%;
+  list-style: none;
 }
 header nav ul li:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
@@ -44,6 +45,7 @@ header nav ul li .link-menu {
   line-height: 16px;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.75);
+  transition: all 250ms;
 }
 header nav ul li .link-menu:hover {
   color: #DC0D28;
@@ -51,7 +53,6 @@ header nav ul li .link-menu:hover {
 }
 header nav ul li .btn {
   text-decoration: none;
-  box-sizing: border-box;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
 }
@@ -198,7 +199,7 @@ main div .btn-contacto:hover {
 
 /* Nuestro Portfolio */
 .portfolio-header {
-  padding: 60px 0 60px 220px;
+  padding: 50px 0 50px 220px;
   font-size: 48px;
   font-weight: 700;
   line-height: 55.2px;
@@ -214,32 +215,88 @@ main div .btn-contacto:hover {
 .portfolio-container {
   display: flex;
   justify-content: center;
-  padding-bottom: 121px;
+  padding-bottom: 115px;
 }
-
-.portfolio-item {
-  height: 467px;
+.portfolio-container .portfolio-item {
   position: relative;
-}
-.portfolio-item img {
   transition: all 250ms;
 }
-.portfolio-item img:hover {
+.portfolio-container .portfolio-item:hover {
   transform: scale(1.07);
 }
-.portfolio-item::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 467px;
-  width: 340px;
-}
 
-.responsive {
-  display: none;
-}
+@media only screen and (max-width: 320px) {
+  /* Nuestro Portfolio */
+  .portfolio-header {
+    padding: 25px 0 25px 20px;
+    font-size: 30px;
+  }
+  .portfolio-header::before {
+    content: "-";
+    color: #eb004e;
+    padding-right: 15px;
+  }
 
+  .responsive {
+    width: 310px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  /* Nuestro Portfolio */
+  .portfolio-header {
+    padding: 25px 0 25px 25px;
+    font-size: 35px;
+  }
+
+  .responsive {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  /* Nuestro Portfolio */
+  .portfolio-header {
+    padding: 25px 0 25px 25px;
+    font-size: 37px;
+  }
+
+  .responsive {
+    width: 340px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* Nuestro Portfolio */
+  .portfolio-header {
+    width: 500px;
+    padding: 40px 0 40px 40px;
+    font-size: 48px;
+  }
+
+  .portfolio-container {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-container .portfolio-item {
+    width: 235px;
+  }
+  .portfolio-container .portfolio-item img {
+    width: 235px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .portfolio-container {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .responsive {
+    display: none;
+  }
+}
 /* Fin Portfolio */
 /* Inicio Contacto */
 #contacto {

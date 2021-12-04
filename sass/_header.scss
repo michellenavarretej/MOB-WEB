@@ -28,7 +28,7 @@ header {
 
     nav {
 
-        padding-right: 4%;
+        padding-right: 5%;
         padding-top: 0%;
 
         ul {
@@ -40,8 +40,8 @@ header {
 
             li {
                 padding: 14%;
+                list-style: none;
                
-                // Hover que hacía que no fuera transparente
                 &:hover {
                     background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) ) ;
                 }
@@ -55,6 +55,7 @@ header {
                     line-height: 16px;
                     letter-spacing: 0.5px;
                     color: rgba(255, 255, 255, 0.75);
+                    transition: all 250ms;
 
                     &:hover {
 
@@ -68,14 +69,13 @@ header {
                 
                 .btn{
                     text-decoration: none; 
-                    box-sizing: border-box;
                     border: 2px solid rgba(255, 255, 255, 0.5);
                     border-radius: 6px;
                    
-                    &:hover{
-                    background-color: #DC0D28;
-                    border: 2px solid #DC0D28;
-                    color: rgba(255, 255, 255, 0.75);
+                    &:hover {
+                        background-color: #DC0D28;
+                        border: 2px solid #DC0D28;
+                        color: rgba(255, 255, 255, 0.75);
 
                     }
                 }
