@@ -218,10 +218,26 @@ main div .btn-contacto:hover {
 }
 
 .portfolio-item {
-  width: 320px;
   height: 467px;
-  padding: 0 20px;
-  background-color: aquamarine;
+  position: relative;
+}
+.portfolio-item img {
+  transition: all 250ms;
+}
+.portfolio-item img:hover {
+  transform: scale(1.07);
+}
+.portfolio-item::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 467px;
+  width: 340px;
+}
+
+.responsive {
+  display: none;
 }
 
 /* Fin Portfolio */

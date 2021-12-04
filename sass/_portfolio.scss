@@ -23,11 +23,32 @@
 }
 
 .portfolio-item {
-    width: 320px;
     height: 467px;
-    padding: 0 20px;
-    background-color: aquamarine;
+    position: relative;
+    
+    img {
+        transition: all 250ms;
 
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+    
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 467px;
+        width: 340px ;
+
+        // background: #eb004e;
+    }
+}
+
+.responsive {
+    display: none;
 }
 
 /* Fin Portfolio */
