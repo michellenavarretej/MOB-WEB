@@ -119,6 +119,32 @@ $grey: #262626;
 }
 
 // Medias Querys
+@media only screen and (max-width: 425px) {
+    #contacto {
+
+        .form-content {
+            
+            .form-header {
+                width: auto;
+                padding-top: 30px;
+                padding-bottom: 32px;
+            
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 50.2px;
+            }
+
+            p {
+                width: auto;
+            }
+
+            #form {
+                width: 290px;
+            }
+        }
+        
+    }
+}
 
 
 /* Fin Contacto */
