@@ -580,6 +580,11 @@ main .contenedor .linea .columna div .btn-contacto:hover {
   padding: 40px 0px 40px 65px;
 }
 
+@media only screen and (max-width: 425px) {
+  .footer-img {
+    padding: 23px 0px 23px 30px;
+  }
+}
 /* Fin Footer */
 
 /*# sourceMappingURL=style.css.map */
