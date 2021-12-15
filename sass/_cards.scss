@@ -1,15 +1,19 @@
 .sectionCards {
+  
     height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
     padding: 5%;
-    background-size:cover;
+    background-size: cover;
 
     .contenedor-cards {
+        max-width: 1440px;
+       
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
 
         .card {
@@ -26,7 +30,7 @@
             border-radius: 8px;
 
             svg {
-               color:  #DC0D28;
+                color: #DC0D28;
                 margin-bottom: 10px;
             }
 
@@ -55,9 +59,10 @@
                 transform: translateY(-1.5%);
                 // transition: ease-in;
                 // transition: 0.4s;
-                transition: all .3s cubic-bezier(.645,.045,.355,1);
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
                 -webkit-font-smoothing: antialiased;
-                svg{
+
+                svg {
                     color: #ffff;
                 }
 

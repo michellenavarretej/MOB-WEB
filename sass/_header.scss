@@ -1,87 +1,192 @@
+// inicio header
+// header {
+//     background-size: cover;
+
+//     height: 90px;
+
+//     display: flex;
+//     font-family: Helvetica,
+//     sans-serif;
+//     text-decoration: none;
+//     justify-content: space-between;
+//     align-items: center;
+
+
+//     .logo-mob {
+//         padding: 2% 2%;
+
+//         a {
+//             img {
+
+
+//                 height: 38px;
+
+
+//             }
+//         }
+//     }
+
+//     nav {
+
+//         padding-right: 5%;
+//         padding-top: 0%;
+
+
+//         ul {
+//             width: 60%;
+//             display: flex;
+//             align-items: flex-end;
+//             justify-content: space-evenly;
+
+
+//             li {
+//                 padding: 14%;
+//                 list-style: none;
+
+// &:hover {
+//     background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+// }
+
+//                 .link-menu {
+
+//                     text-decoration: none;
+//                     font-weight: bold;
+//                     font-style: normal;
+//                     font-size: 14px;
+//                     line-height: 16px;
+//                     letter-spacing: 0.5px;
+//                     color: rgba(255, 255, 255, 0.75);
+//                     transition: all 250ms;
+
+//                     &:hover {
+
+//                         color: #DC0D28;
+//                         border-bottom: 2px solid #DC0D28;
+
+
+//                     }
+
+//                 }
+
+//                 .btn {
+//                     text-decoration: none;
+//                     border: 2px solid rgba(255, 255, 255, 0.5);
+//                     border-radius: 6px;
+
+//                     &:hover {
+//                         background-color: #DC0D28;
+//                         border: 2px solid #DC0D28;
+//                         color: rgba(255, 255, 255, 0.75);
+
+//                     }
+//                 }
+
+//             }
+
+//         }
+
+//     }
+
+//     // tablet
+//     @media only screen and (min-width:500px) and (max-width: 768px){
+
+//         #inicio{
+//             display: none;
+//         }
+
+//         div{
+//             display: unset;
+
+
+//         }
+
+
+//     }
+//     // movile
+//     @media only screen and (max-width: 499px){
+//         #inicio{
+//             display: none;
+//         }
+//         nav{
+//            display: unset;
+//         }
+
+//     }
+// }
+
+
 header {
-    // temporal
-    // background: #262626;
-    background-size: cover;
-    // temporal
-   height: 90px;
-
-    display: flex;
-    font-family: Helvetica, sans-serif;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
-
-
-    .logo-mob {
-        padding: 2% 2%;
-
-        a {
-            img {
-
-
-                height: 38px;
-
-
-            }
-        }
-    }
-
+    margin-top: 0%;
     nav {
+        
 
-        padding-right: 5%;
-        padding-top: 0%;
-
-        ul {
-            width: 60%;
+        
+        div {
+            background: transparent;
             display: flex;
-            align-items: flex-end;
+            // align-items: flex-end;
             justify-content: space-evenly;
-          
 
-            li {
-                padding: 14%;
-                list-style: none;
-               
-                &:hover {
-                    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) ) ;
+            a {
+                img {
+                    height: 38px;
                 }
-               
-                .link-menu {
-                  
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-style: normal;
-                    font-size: 14px;
-                    line-height: 16px;
-                    letter-spacing: 0.5px;
-                    color: rgba(255, 255, 255, 0.75);
-                    transition: all 250ms;
-
-                    &:hover {
-
-                        color: #DC0D28;
-                        border-bottom: 2px solid #DC0D28;
-                        
-
-                    }
-
-                }
-                
-                .btn{
-                    text-decoration: none; 
-                    border: 2px solid rgba(255, 255, 255, 0.5);
-                    border-radius: 6px;
-                   
-                    &:hover {
-                        background-color: #DC0D28;
-                        border: 2px solid #DC0D28;
-                        color: rgba(255, 255, 255, 0.75);
-
-                    }
-                }
-
             }
 
+
+            div {
+                justify-content: end;
+
+                div {
+                    
+
+
+                    align-items: center;
+
+                    .link {
+                        font-family: Helvetica, sans-serif;
+                        text-decoration: none;
+                        list-style: none;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: 14px !important;
+                        // line-height: 16px !important;
+                        // letter-spacing: 0.5px !important;
+                        color: rgba(255, 255, 255, 0.75);
+                        transition: all 250ms;
+                        padding: 10% 10%;
+
+                        &:hover {
+                            color: #DC0D28 !important;
+                            border-bottom: 2px solid #DC0D28;
+                            background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+                        }
+
+
+
+                    }
+
+                    .boton {
+                        text-decoration: none;
+                        border: 2px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 6px;
+                        padding: 5% 5%;
+                        margin: 8% 4%;
+
+                        &:hover {
+                            background-color: #DC0D28;
+                            border: 2px solid #DC0D28;
+                            color: rgba(255, 255, 255, 0.75) !important;
+
+                        }
+
+                    }
+
+                }
+
+
+            }
         }
     }
+
 }
